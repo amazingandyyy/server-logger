@@ -1,0 +1,48 @@
+{
+  "name": "open-standard-project",
+  "description": "Standard open source project starter kit.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Andy Chen",
+    "email": "amazingandyyy@gmail.com",
+    "url": "https://amazingandyyy.com/"
+  },
+  "scripts": {
+    "test": "standard --fix",
+    "precommit": "npm run test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "git add"
+    ]
+  },
+  "markdeck": {
+    "url": "https://github.com/amazingandyyy/open-standard-project/tree/master/docs"
+  },
+  "bugs": {
+    "url": "https://github.com/amazingandyyy/open-standard-project/issues"
+  },
+  "homepage": "https://github.com/amazingandyyy/open-standard-project",
+  "keywords": [
+    "open source"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "node-run": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amazingandyyy/open-standard-project.git"
+  },
+  "devDependencies": {
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
+    "standard": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {}
+}
