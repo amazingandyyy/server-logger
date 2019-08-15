@@ -1,25 +1,51 @@
 <h1 align="center">
-🏃 open-standard-project
+🗣️ server-logger
 </h1>
 <p align="center">
-Standard open source project starter kit.
+A simple server logger middleware.
 </p>
 
 <p align="center">
-   <a href="https://github.com/amazingandyyy/open-standard-project/blob/master/LICENSE">
+   <a href="https://github.com/amazingandyyy/server-logger/blob/master/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-green.svg" />
    </a>
-   <a href="https://circleci.com/gh/amazingandyyy/open-standard-project">
-      <img src="https://circleci.com/gh/amazingandyyy/open-standard-project.svg?style=svg" />
+   <a href="https://circleci.com/gh/amazingandyyy/server-logger">
+      <img src="https://circleci.com/gh/amazingandyyy/server-logger.svg?style=svg" />
    </a>
 </p>
 
-> open source!
+> ZERO dependencies
+
+## Installation
+
+```shell
+$ npm i --save @amazingandyyy/server-logger
+```
 
 ## Usage
 
-```shell
-$ git clone git@github.com:amazingandyyy/open-standard-project.git
+```javascript
+const NodeServer = require('@amazingandyyy/node-server')
+const logger = require('@amazingandyyy/parser-logger')
+
+app.use(logger('dev'))
+
+app.on('get', '/', (req, res) => {
+  res.send(200)
+})
+
+app.start({ port: '4000' })
+```
+
+
+## Messages
+
+```
+21:29:42  404  GET /fafafa
+21:29:46  200  GET /
+21:29:47  200  GET /
+21:29:42  500  GET /fafafa?fad
+21:29:49  200  GET /
 ```
 
 ## License
