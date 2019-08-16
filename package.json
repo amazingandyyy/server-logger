@@ -1,7 +1,7 @@
 {
   "name": "@amazingandyyy/server-logger",
   "description": "A simple server logger middleware.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Andy Chen",
     "email": "amazingandyyy@gmail.com",
