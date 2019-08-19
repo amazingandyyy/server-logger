@@ -12,6 +12,9 @@ A simple server logger middleware.
    <a href="https://circleci.com/gh/amazingandyyy/server-logger">
       <img src="https://circleci.com/gh/amazingandyyy/server-logger.svg?style=svg" />
    </a>
+   <a href="https://www.npmjs.com/package/@amazingandyyy/server-logger">
+      <img src="https://badge.fury.io/js/%40amazingandyyy%2Fserver-logger.svg" />
+   </a>
 </p>
 
 > ZERO dependencies
